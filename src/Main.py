@@ -1,6 +1,7 @@
 import pygame
 import sys
 
+from StateHandler import StateHandler
 
 pygame.init() # initialize pygame
 
