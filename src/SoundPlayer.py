@@ -5,7 +5,7 @@ class SoundPlayer:
         mixer.init() # initialize the mixer library
 
     def play(self, sound):
-        sound = mixer.sound("../res/audio/" + sound)
+        sound = mixer.Sound("../res/audio/" + sound)
         sound.play()
         
         

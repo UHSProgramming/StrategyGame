@@ -2,6 +2,7 @@ import pygame
 import sys
 
 from StateHandler import StateHandler
+from SoundPlayer import SoundPlayer
 
 pygame.init() # initialize pygame
 
@@ -15,7 +16,7 @@ clock = pygame.time.Clock()
 # misc temporary variables
 BACKGROUND_COLOR = (255, 0, 128)
 testImage = pygame.image.load("../res/img/lyn.png")
-
+sound = SoundPlayer().play("mountain_king.ogg")
 
 while running:
     for event in pygame.event.get():
